@@ -19,6 +19,7 @@ class ProductSeeder extends Seeder
             for ($i = 0; $i < 10; $i++) {
                 \App\Models\Product::create([
                     'category_id' => $category->id,
+                    'code' => $faker->unique()->word,
                     'name' => $faker->word,
                     'description' => $faker->text,
                     'price' => $faker->randomFloat(2, 1000, 100000),

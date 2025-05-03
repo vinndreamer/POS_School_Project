@@ -1,2 +1,6 @@
 # Pos Point of Sale 
-## Kevin Andrea Saputra
+## tugas 1
+### Seeding
+
+## Tugas 2
+### Template

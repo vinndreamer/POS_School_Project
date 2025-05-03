@@ -123,4 +123,33 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'providers' => [
+            /*
+             * Laravel Framework Service Providers...
+             */
+            Illuminate\Auth\AuthServiceProvider::class,
+            Illuminate\Broadcasting\BroadcastServiceProvider::class,
+            Illuminate\Bus\BusServiceProvider::class,
+            // ...other default providers
+            
+            /*
+             * Package Service Providers...
+             */
+            Intervention\Image\ImageServiceProvider::class,
+            
+            /*
+             * Application Service Providers...
+             */
+            App\Providers\AppServiceProvider::class,
+            App\Providers\AuthServiceProvider::class,
+            App\Providers\EventServiceProvider::class,
+            App\Providers\RouteServiceProvider::class,
+        ],
+    
+        'aliases' => [
+            'App' => Illuminate\Support\Facades\App::class,
+            'Image' => Intervention\Image\Facades\Image::class,
+            // ...other aliases
+        ],
+   
 ];
